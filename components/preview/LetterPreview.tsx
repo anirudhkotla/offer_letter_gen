@@ -147,7 +147,8 @@ const A4_H_MM = 297;
 const PAD_TOP_MM = 34;
 const LETTER_PAD_TOP_MM = PAD_TOP_MM + 3;
 const PAD_RIGHT_MM = 17;
-const PAD_BOTTOM_MM = 48;
+const FOOTER_CONTENT_TOP_MM = 276;
+const PAD_BOTTOM_MM = A4_H_MM - FOOTER_CONTENT_TOP_MM + LETTER_PAD_TOP_MM;
 const PAD_LEFT_MM = 17;
 
 const contentPad: React.CSSProperties = {

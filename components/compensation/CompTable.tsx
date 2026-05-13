@@ -133,7 +133,7 @@ export default function CompensationTable({ comp, forPrint = false }: Props) {
           key={r.label}
           className={`grid grid-cols-[1.35fr_1fr_1fr_1fr] border-b border-gray-200 ${
             r.type === "highlight"
-              ? "bg-orange-50 font-bold text-orange-700"
+              ? "bg-green-50 font-bold text-green-700"
               : r.type === "subtotal"
               ? "bg-gray-50 font-semibold"
               : i % 2 === 0 ? "bg-white" : "bg-gray-50"
