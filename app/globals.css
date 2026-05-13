@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --brand: #1A3C6B;
+  --brand-light: #E8EEF7;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #F5F7FA;
+  color: #1a1a2e;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+::-webkit-scrollbar-thumb { background: #c1c1c1; border-radius: 10px; }
+
+/* Input focus ring */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  ring: 2px;
+}
+
+/* Letter preview font */
+.letter-body {
+  font-family: 'Times New Roman', Georgia, serif;
+  font-size: 10.5pt;
+  line-height: 1.45;
+}
+
+@media print {
+  .no-print { display: none !important; }
+  .print-only { display: block !important; }
+}
